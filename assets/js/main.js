@@ -244,7 +244,7 @@ var overlays = {
 	"Holotape": ol_tape,
 	"Location": ol_loc,
 	"Random Encounter": ol_event,
-	"Secondary Location": ol_loc2,
+//	"Secondary Location": ol_loc2,
 	"Power Armor": ol_pa,
 	"Train Station": ol_train,
 	"Treasure Map": ol_map,
