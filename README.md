@@ -4,7 +4,7 @@ Demo at https://dan-parker.github.io/YASSM/index.html
 
 
 This is a location datamined version of https://github.com/dan-parker/Fallout76-Map
-
+Plus some suggestion from https://www.reddit.com/r/fo76
 
 
 
