@@ -7,6 +7,10 @@ var ol_train = L.layerGroup();
 var ol_pwr = L.layerGroup();
 ol_map = L.layerGroup();
 var ol_tape = L.layerGroup();
+var ol_bhead = L.layerGroup();
+var ol_capstash = L.layerGroup();
+var ol_mag = L.layerGroup();
+var ol_nuka = L.layerGroup();
 var ol_wb = L.layerGroup();
 var ol_rift = L.layerGroup();
 var ol_event = L.layerGroup();
@@ -21,7 +25,7 @@ var baselayer = L.tileLayer('./assets/tiles/{z}/{x}/{y}.png', {
 
 // create the map
 var map = L.map('mapid', {
-  layers: [baselayer, ol_vault,ol_loc,ol_train,ol_wb,ol_rift],
+  layers: [baselayer, ol_rift, ol_loc,ol_vault,ol_train,ol_wb],
   crs: L.CRS.Simple,
   fullscreenControl: false,
   fullscreenControlOptions: {
@@ -56,10 +60,14 @@ var VaultMarker51 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'vault'
 var Vault94Marker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'vault94', className:'mark_va icon1x'}); 	//Vault94
 var Vault96Marker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'vault96', className:'mark_va icon1x'}); 	//Vault96
 var VaultMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'vault', className:'mark_va icon1x'}); 		//Vault
-var TreasureMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'map', className:'mark_tm icon-2x'}); 		//Treasure Map
-var mark_tape = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'holotape', className:'mark_tape icon3x'}); 	//Holotape
+var TreasureMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'map', className:'mark_tm icon-2x'}); 	//Treasure Map
+var HoloMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'holotape', className:'mark_tape icon3x'}); 	//Holotape
 var FCoreMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'fcore', className:'mark_fcore icon3x'}); 	//Fusion Core
-var PArmorMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'parmor', className:'mark_parmor icon-1x'}); //Power Armor
+var MagazineMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'magazine', className:'mark_mag icon-2x'}); 	//Magazine
+var BobbleMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'bobble', className:'mark_mag icon-2x'}); 	//Bobblehead
+var CapStashMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'cap', className:'mark_fcore icon-1x'}); 	//Cap Stash
+var NukaColaMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'nukacola', className:'mark_fcore icon1x'}); 	//Cola
+var PArmorMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'parmor', className:'mark_parmor icon-1x'}); 	//Power Armor
 var FissureMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'fissure', className:'mark_rift icon-1x'}); 	//Fissure
 var CameraMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'camera', className:'mark_camera icon1x'}); 	//Tourist
 var MistressMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'mysteries', className:'mark_mom icon1x'}); 	//Body
@@ -215,7 +223,22 @@ var CaveMarker2 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'mine', c
 		break;
 		case (MarkerData[i].type == "TreasureMarker"):
 		var layer = "ol_map";
-
+		break;
+		case (MarkerData[i].type == "HoloMarker"):
+		var layer = "ol_tape";
+		break;
+		case (MarkerData[i].type == "BobbleMarker"):
+		var layer = "ol_bhead";
+		break;
+		case (MarkerData[i].type == "CapStashMarker"):
+		var layer = "ol_capstash";
+		break;
+		case (MarkerData[i].type == "MagazineMarker"):
+		var layer = "ol_mag";
+		break;
+		case (MarkerData[i].type == "NukaColaMarker"):
+		var layer = "ol_nuka";
+		break;
           }
 if (layer == 'ol_map') {
 	  var marker = new L.marker(RemapCoord(MarkerData[i].y,MarkerData[i].x,0),{icon: window[MarkerData[i].type], title: MarkerData[i].name, riseOnHover: true}).bindPopup(tooltipMapTemplate(MarkerData[i].name,MarkerData[i].id+".jpg",""),{maxWidth:'auto'})
@@ -240,20 +263,24 @@ var baseMaps = {
 	"Base": baselayer
 };
 var overlays = {
-	"Fusion Core": ol_pwr,
-	"Holotape": ol_tape,
 	"Location": ol_loc,
-	"Random Encounter": ol_event,
-//	"Secondary Location": ol_loc2,
-	"Power Armor": ol_pa,
-	"Train Station": ol_train,
-	"Treasure Map": ol_map,
 	"Vault": ol_vault,
+	"Train Station": ol_train,
 	"Workshop": ol_wb,
 	"Fissure": ol_rift,
+	"Fusion Core": ol_pwr,
+	"Magazone": ol_mag,
+	"Cap Stash": ol_capstash,
+//	"Bobblehead": ol_bhead,
+	"Nuka-Cola": ol_nuka,
+//	"Holotape": ol_tape,
+	"Random Encounter": ol_event,
+	"Power Armor": ol_pa,
+	"Treasure Map": ol_map,
+
 };
 
-L.control.layers(null, overlays).addTo(map);
+L.control.layers(null, overlays, {autoZIndex:true}).addTo(map);
 
 var searchlayers = L.layerGroup([
 	ol_vault,

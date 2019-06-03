@@ -291,3 +291,12 @@
 .icon-camera:before {
   content: "\e958";
 }
+.icon-nukacola:before {
+  content: "\e959";
+}
+.icon-cap:before {
+  content: "\e95a";
+}
+.icon-magazine:before {
+  content: "\e95b";
+}
