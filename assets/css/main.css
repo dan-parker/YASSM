@@ -197,6 +197,15 @@ html,body {height:100%;margin:0px;}
 .zoom-1 .icon-4x { font-size: 10px;}
 .zoom-0 .icon-4x { font-size: 6px;}
 
+.zoom-5 .icon-4x {font-size:28px;}
+.zoom-5 .icon-3x {font-size:30px;}
+.zoom-5 .icon-2x {font-size:32px;}
+.zoom-5 .icon-1x {font-size:34px;}
+.zoom-5 .icon1x  {font-size:36px;}
+.zoom-5 .icon2x  {font-size:38px;}
+.zoom-5 .icon3x  {font-size:40px;}
+.zoom-5 .icon4x  {font-size:42px;}
+
 .tooltitle {font-weight:bold;font-size: 0.9vw;}
 
 
