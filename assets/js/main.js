@@ -65,7 +65,7 @@ var HoloMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'holotape'
 var FCoreMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'fcore', className:'mark_fcore icon3x'}); 	//Fusion Core
 var MagazineMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'magazine', className:'mark_mag icon-2x'}); 	//Magazine
 var BobbleMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'bobble', className:'mark_mag icon-2x'}); 	//Bobblehead
-var CapStashMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'cap', className:'mark_fcore icon-1x'}); 	//Cap Stash
+var CapStashMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'cap', className:'mark_fcore icon1x'}); 	//Cap Stash
 var NukaColaMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'nukacola', className:'mark_fcore icon1x'}); 	//Cola
 var PArmorMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'parmor', className:'mark_parmor icon-1x'}); 	//Power Armor
 var FissureMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'fissure', className:'mark_rift icon-1x'}); 	//Fissure
@@ -271,7 +271,7 @@ var overlays = {
 	"Fusion Core": ol_pwr,
 	"Magazine": ol_mag,
 	"Cap Stash": ol_capstash,
-//	"Bobblehead": ol_bhead,
+	"Bobblehead": ol_bhead,
 	"Nuka Cola": ol_nuka,
 //	"Holotape": ol_tape,
 	"Random Encounter": ol_event,
