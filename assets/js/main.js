@@ -15,6 +15,7 @@ var ol_wb = L.layerGroup();
 var ol_rift = L.layerGroup();
 var ol_event = L.layerGroup();
 var ol_locv = L.layerGroup();
+var ol_cb = L.layerGroup();
 
 // the tile layer containing the image generated with `gdal2tiles --leaflet -p raster -w none <img> tiles`
 var baselayer = L.tileLayer('./assets/tiles/{z}/{x}/{y}.png', {
@@ -62,16 +63,17 @@ var Vault96Marker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'vault9
 var VaultMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'vault', className:'mark_va icon1x'}); 		//Vault
 var TreasureMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'map', className:'mark_tm icon-2x'}); 	//Treasure Map
 var HoloMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'holotape', className:'mark_tape icon3x'}); 	//Holotape
-var FCoreMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'fcore', className:'mark_fcore icon3x'}); 	//Fusion Core
-var MagazineMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'magazine', className:'mark_mag icon-2x'}); 	//Magazine
+var FCoreMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'fcore', className:'mark_fcore icon2x'}); 	//Fusion Core
+var MagazineMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'magazine', className:'mark_mag icon-4x'}); 	//Magazine
 var BobbleMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'bobble', className:'mark_mag icon-2x'}); 	//Bobblehead
-var CapStashMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'cap', className:'mark_fcore icon1x'}); 	//Cap Stash
-var NukaColaMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'nukacola', className:'mark_fcore icon1x'}); 	//Cola
+var CapStashMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'cap', className:'mark_fcore icon-1x'}); 	//Cap Stash
+var NukaColaMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'nukacola', className:'mark_fcore icon-2x'}); //Cola
 var PArmorMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'parmor', className:'mark_parmor icon-1x'}); 	//Power Armor
 var FissureMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'fissure', className:'mark_rift icon-1x'}); 	//Fissure
 var CameraMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'camera', className:'mark_camera icon1x'}); 	//Tourist
 var MistressMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'mysteries', className:'mark_mom icon1x'}); 	//Body
 var EncounterMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'unknown', className:'mark_rift icon-1x'}) 	//Random Spawn
+var WorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'bobble', className:'mark_mag icon-2x'}); 	//Bobblehead
 
 var FarmMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'farm', className:'mark_lo icon1x'}); 		//Farm/Homestead
 var CabinMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'cabin', className:'mark_lo icon-2x'});  		//Farm/Cabin
@@ -239,6 +241,9 @@ var CaveMarker2 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'mine', c
 		case (MarkerData[i].type == "NukaColaMarker"):
 		var layer = "ol_nuka";
 		break;
+		case (MarkerData[i].type == "WorkbenchMarker"):
+		var layer = "ol_cb";
+		break;
           }
 if (layer == 'ol_map') {
 	  var marker = new L.marker(RemapCoord(MarkerData[i].y,MarkerData[i].x,0),{icon: window[MarkerData[i].type], title: MarkerData[i].name, riseOnHover: true}).bindPopup(tooltipMapTemplate(MarkerData[i].name,MarkerData[i].id+".jpg",""),{maxWidth:'auto'})
@@ -277,6 +282,7 @@ var overlays = {
 	"Random Encounter": ol_event,
 	"Power Armor": ol_pa,
 	"Treasure Map": ol_map,
+//	"Crafting Bench": ol_cb,
 
 };
 
