@@ -73,7 +73,7 @@ var FissureMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'fissur
 var CameraMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'camera', className:'mark_camera icon1x'}); 	//Tourist
 var MistressMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'mysteries', className:'mark_mom icon1x'}); 	//Body
 var EncounterMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'unknown', className:'mark_rift icon-1x'}) 	//Random Spawn
-var WorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'bobble', className:'mark_mag icon-2x'}); 	//Bobblehead
+var WorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'workbench1', className:'mark_mag icon-3x'}); //Workbench
 
 var FarmMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'farm', className:'mark_lo icon1x'}); 		//Farm/Homestead
 var CabinMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'cabin', className:'mark_lo icon-2x'});  		//Farm/Cabin
@@ -282,7 +282,7 @@ var overlays = {
 	"Random Encounter": ol_event,
 	"Power Armor": ol_pa,
 	"Treasure Map": ol_map,
-//	"Crafting Bench": ol_cb,
+	"Crafting Bench": ol_cb,
 
 };
 
