@@ -25,3 +25,5 @@ Thanks to folks from https://www.reddit.com/r/fo76 for feedback
 
 
 Fallout, Vault Boy and related logos are trademarks or registered trademarks of Bethesda Softworks LLC in the U.S. and/or other countries
+
+Treasure Maps from http://dulfy.net/2018/12/02/fallout-76-treasure-maps-guide/
