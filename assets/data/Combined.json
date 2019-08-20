@@ -984,7 +984,7 @@ MarkerData = [
 {"id":3715405,"name":"Forest (Map 9)","type":"TreasureMarker","x":-41273.652344,"y":-24995.271484},
 {"id":3715446,"name":"Forest (Map 7)","type":"TreasureMarker","x":-78384.156250,"y":-84171.117187},
 {"id":3715568,"name":"Forest (Map 5)","type":"TreasureMarker","x":-122167.453125,"y":-49725.003906},
-{"id":3715543,"name":"Ash Heap (Map 7)","type":"TreasureMarker","x":-101486.882813,"y":-81483.960937},
+{"id":3715543,"name":"Ash Heap (Map 2)","type":"TreasureMarker","x":-101486.882813,"y":-81483.960937},
 {"id":3715293,"name":"Savage Divide (Map 1)","type":"TreasureMarker","x":-8329.735352,"y":-157138.265625},
 {"id":3715570,"name":"Ash Heap (Map 1)","type":"TreasureMarker","x":-126027.656250,"y":-143726.750000},
 {"id":3715399,"name":"Toxic Valley (Map 2)","type":"TreasureMarker","x":-31294.226563,"y":163443.921875},
