@@ -21,7 +21,7 @@ var ol_cb = L.layerGroup();
 var baselayer = L.tileLayer('./assets/tiles/{z}/{x}/{y}.png', {
   noWrap: true, 
   //bounds: bounds,
-  attribution: 'Map data &copy; Bethesda Softworks LLC, a ZeniMax Media company. Trademarks belong to their respective owners. All Rights Reserved.<br/>See source at: <a href="https://github.com/dan-parker/YASSM">https://github.com/dan-parker/YASSM</a>'
+  attribution: 'Map data &copy; Bethesda Softworks LLC, a ZeniMax Media company. Trademarks belong to their respective owners. All Rights Reserved.<br/>See source and Credits at: <a href="https://github.com/dan-parker/YASSM">https://github.com/dan-parker/YASSM</a>'
 });
 
 // create the map
@@ -167,6 +167,14 @@ function tooltipMapTemplate(title,img='',text='') {
 	result += '</div>';
  	return result;
 }
+function tooltipTouristTemplate(title,img='',text='') {
+	var result = '<div class="tooltip">';
+ 	result += '<div class="tooltitle">'+title+'</div>';
+ 	if (img) result += '<div><img src="assets/img/tourist/' + img + '"/></div>';
+ 	if (text) result += '<div>' + text + '</div>';
+	result += '</div>';
+ 	return result;
+}
 
 
 //Secondary Location
@@ -247,6 +255,10 @@ var CaveMarker2 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'mine', c
           }
 if (layer == 'ol_map') {
 	  var marker = new L.marker(RemapCoord(MarkerData[i].y,MarkerData[i].x,0),{icon: window[MarkerData[i].type], title: MarkerData[i].name, riseOnHover: true}).bindPopup(tooltipMapTemplate(MarkerData[i].name,MarkerData[i].id+".jpg",""),{maxWidth:'auto'})
+          .on("mouseover", function(evt) { this.openPopup(); })
+	  .addTo(window[layer]);
+} else if (MarkerData[i].type == 'CameraMarker') {
+	  var marker = new L.marker(RemapCoord(MarkerData[i].y,MarkerData[i].x,0),{icon: window[MarkerData[i].type], title: MarkerData[i].name, riseOnHover: true}).bindPopup(tooltipTouristTemplate(MarkerData[i].name,MarkerData[i].id+".png",""),{maxWidth:'auto'})
           .on("mouseover", function(evt) { this.openPopup(); })
 	  .addTo(window[layer]);
 } else {
