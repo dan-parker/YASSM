@@ -149,6 +149,24 @@ html,body {height:100%;margin:0px;}
 .mark_mag {
 	color:steelblue;
 }
+.mark_nukacherry {
+	color:#e73728;
+}
+.mark_nukaquantum {
+	color:#40E0D0;
+}
+.mark_nukawild {
+	color:#8B4513;
+}
+mark_nukaorange {
+	color:#FF8C00;
+}
+.mark_nukagrape {
+	color:#4B0082;
+}
+.mark_nukadark {
+	color:#000000;
+}
 
 .icon {
   opacity: 0.8;

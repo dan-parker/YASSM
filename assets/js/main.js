@@ -67,7 +67,12 @@ var FCoreMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'fcore', 
 var MagazineMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'magazine', className:'mark_mag icon-4x'}); 	//Magazine
 var BobbleMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'bobble', className:'mark_mag icon-2x'}); 	//Bobblehead
 var CapStashMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'cap', className:'mark_fcore icon-1x'}); 	//Cap Stash
-var NukaColaMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'nukacola', className:'mark_fcore icon-2x'}); //Cola
+var NukaColaCherryMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'nukacola', className:'mark_nukacherry icon-2x'}); //Cola
+var NukaColaQuantumMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'nukacola', className:'mark_nukaquantum icon-2x'}); //Cola
+var NukaColaWildMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'nukacola', className:'mark_nukawild icon-2x'}); //Cola
+var NukaColaGrapeMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'nukacola', className:'mark_nukagrape icon-2x'}); //Cola
+var NukaColaOrangeMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'nukacola', className:'mark_nukaorange icon-2x'}); //Cola
+var NukaColaDarkMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'nukacola', className:'mark_nukadark icon-2x'}); //Cola
 var PArmorMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'parmor', className:'mark_parmor icon-1x'}); 	//Power Armor
 var FissureMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'fissure', className:'mark_rift icon-1x'}); 	//Fissure
 var CameraMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'camera', className:'mark_camera icon1x'}); 	//Tourist
@@ -246,7 +251,7 @@ var CaveMarker2 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'mine', c
 		case (MarkerData[i].type == "MagazineMarker"):
 		var layer = "ol_mag";
 		break;
-		case (MarkerData[i].type == "NukaColaMarker"):
+		case ((MarkerData[i].type).startsWith("NukaCola") && (MarkerData[i].type).endsWith("Marker")):
 		var layer = "ol_nuka";
 		break;
 		case (MarkerData[i].type == "WorkbenchMarker"):
