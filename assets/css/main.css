@@ -167,6 +167,24 @@ mark_nukaorange {
 .mark_nukadark {
 	color:#000000;
 }
+.mark_tinkerbench {
+	color:#61BB46;
+}
+.mark_pabench {
+	color:#FDB827;
+}
+.mark_chembench {
+	color:#F5821F;
+}
+.mark_cookbench {
+	color:#E03A3E;
+}
+.mark_armorbench {
+	color:#963D97;
+}
+.mark_weaponbench {
+	color:#009DDC;
+}
 
 .icon {
   opacity: 0.8;

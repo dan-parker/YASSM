@@ -77,8 +77,15 @@ var PArmorMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'parmor'
 var FissureMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'fissure', className:'mark_rift icon-1x'}); 	//Fissure
 var CameraMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'camera', className:'mark_camera icon1x'}); 	//Tourist
 var MistressMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'mysteries', className:'mark_mom icon1x'}); 	//Body
-var EncounterMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'unknown', className:'mark_rift icon-1x'}) 	//Random Spawn
-var WorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'workbench1', className:'mark_mag icon-3x'}); //Workbench
+var TravelEncounterMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'travel', className:'mark_rift icon-1x'}) 	//Random Spawn
+var ObjectEncounterMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'object', className:'mark_rift icon-1x'}) 	//Random Spawn
+var SceneEncounterMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'scene', className:'mark_rift icon-1x'}) 	//Random Spawn
+var ArmorWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'armorbench', className:'mark_armorbench icon-3x'}); //Workbench
+var WeaponWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'weaponbench', className:'mark_weaponbench icon-3x'}); //Workbench
+var PAWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'pabench', className:'mark_pabench icon-3x'}); //Workbench
+var CookWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'cookbench', className:'mark_cookbench icon-3x'}); //Workbench
+var TinkerWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'tinkerbench', className:'mark_tinkerbench icon-3x'}); //Workbench
+var ChemistryWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'chemistrybench', className:'mark_chembench icon-3x'}); //Workbench
 
 var FarmMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'farm', className:'mark_lo icon1x'}); 		//Farm/Homestead
 var CabinMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'cabin', className:'mark_lo icon-2x'});  		//Farm/Cabin
@@ -227,7 +234,7 @@ var CaveMarker2 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'mine', c
 		case (MarkerData[i].type == "PArmorMarker"):
 		var layer = "ol_pa";
 		break;
-		case (MarkerData[i].type == "EncounterMarker"):
+		case ((MarkerData[i].type).endsWith("EncounterMarker")):
 		var layer = "ol_event";
 		break;
 		case (MarkerData[i].type == "CameraMarker"):
@@ -253,6 +260,9 @@ var CaveMarker2 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'mine', c
 		break;
 		case ((MarkerData[i].type).startsWith("NukaCola") && (MarkerData[i].type).endsWith("Marker")):
 		var layer = "ol_nuka";
+		break;
+		case ((MarkerData[i].type).endsWith("WorkbenchMarker")):
+		var layer = "ol_cb";
 		break;
 		case (MarkerData[i].type == "WorkbenchMarker"):
 		var layer = "ol_cb";

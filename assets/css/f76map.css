@@ -1,9 +1,9 @@
 @font-face{
   font-family:'f76map';
-  src:url('../font/f76map.eot?v=1.1.0');
-  src:url('../font/f76map.eot?#iefix&v=1.1.0') format('embedded-opentype'),
-  url('../font/f76map.woff?v=1.1.0') format('woff'),
-  url('../font/f76map.ttf?v=1.1.0') format('truetype');
+  src:url('../font/f76map.eot?v=1.4.0');
+  src:url('../font/f76map.eot?#iefix&v=1.4.0') format('embedded-opentype'),
+  url('../font/f76map.woff?v=1.4.0') format('woff'),
+  url('../font/f76map.ttf?v=1.4.0') format('truetype');
   font-weight:normal;
   font-style:normal }
 
@@ -305,4 +305,31 @@
 }
 .icon-workbench1:before {
   content: "\e95d";
+}
+.icon-tinkerbench:before {
+  content: "\e967";
+}
+.icon-armorbench:before {
+  content: "\e966";
+}
+.icon-weaponbench:before {
+  content: "\e965";
+}
+.icon-pabench:before {
+  content: "\e964";
+}
+.icon-cookbench:before {
+  content: "\e95e";
+}
+.icon-chemistrybench:before {
+  content: "\e95f";
+}
+.icon-object:before {
+  content: "\e962";
+}
+.icon-travel:before {
+  content: "\e961";
+}
+.icon-scene:before {
+  content: "\e960";
 }
