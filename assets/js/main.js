@@ -16,6 +16,7 @@ var ol_rift = L.layerGroup();
 var ol_event = L.layerGroup();
 var ol_locv = L.layerGroup();
 var ol_cb = L.layerGroup();
+var ol_safe = L.layerGroup();
 
 // the tile layer containing the image generated with `gdal2tiles --leaflet -p raster -w none <img> tiles`
 var baselayer = L.tileLayer('./assets/tiles/{z}/{x}/{y}.png', {
@@ -86,6 +87,11 @@ var PAWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'pa
 var CookWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'cookbench', className:'mark_cookbench icon-3x'}); //Workbench
 var TinkerWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'tinkerbench', className:'mark_tinkerbench icon-3x'}); //Workbench
 var ChemistryWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'chemistrybench', className:'mark_chembench icon-3x'}); //Workbench
+var SafeMarker_Lvl_0 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'safe0', className:'mark_armorbench icon-2x'}) 	//Safe Level 0
+var SafeMarker_Lvl_1 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'safe1', className:'mark_weaponbench icon-2x'}) 	//Safe Level 0
+var SafeMarker_Lvl_2 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'safe2', className:'mark_pabench icon-2x'}) 	//Safe Level 0
+var SafeMarker_Lvl_3 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'safe3', className:'mark_cookbench icon-2x'}) 	//Safe Level 0
+var SafeMarker_Lvl_Key = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'safekey', className:'mark_tinkerbench icon-2x'}) 	//Safe Level 0
 
 var FarmMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'farm', className:'mark_lo icon1x'}); 		//Farm/Homestead
 var CabinMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'cabin', className:'mark_lo icon-2x'});  		//Farm/Cabin
@@ -267,6 +273,9 @@ var CaveMarker2 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'mine', c
 		case (MarkerData[i].type == "WorkbenchMarker"):
 		var layer = "ol_cb";
 		break;
+		case ((MarkerData[i].type).startsWith("SafeMarker")):
+		var layer = "ol_safe";
+		break;
           }
 if (layer == 'ol_map') {
 	  var marker = new L.marker(RemapCoord(MarkerData[i].y,MarkerData[i].x,0),{icon: window[MarkerData[i].type], title: MarkerData[i].name, riseOnHover: true}).bindPopup(tooltipMapTemplate(MarkerData[i].name,MarkerData[i].id+".jpg",""),{maxWidth:'auto'})
@@ -310,7 +319,7 @@ var overlays = {
 	"Power Armor": ol_pa,
 	"Treasure Map": ol_map,
 	"Crafting Bench": ol_cb,
-
+	"Locked Safes": ol_safe,
 };
 
 L.control.layers(null, overlays, {autoZIndex:true}).addTo(map);
