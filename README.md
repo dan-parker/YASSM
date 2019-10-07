@@ -30,4 +30,4 @@ Treasure Maps from http://dulfy.net/2018/12/02/fallout-76-treasure-maps-guide/
 
 Camera Screenshots from https://www.reddit.com/r/fo76/comments/cdp9zo/tourist_trap_map_find_the_tourist_every_time_with/ - Used with permission
 
-Encounter icons made by https://www.flaticon.com/authors/freepik from https://www.flaticon.com
+Encounter, Safe, Key icons made by https://www.flaticon.com/authors/freepik from https://www.flaticon.com
