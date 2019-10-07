@@ -1,9 +1,9 @@
 @font-face{
   font-family:'f76map';
-  src:url('../font/f76map.eot?v=1.4.0');
-  src:url('../font/f76map.eot?#iefix&v=1.4.0') format('embedded-opentype'),
-  url('../font/f76map.woff?v=1.4.0') format('woff'),
-  url('../font/f76map.ttf?v=1.4.0') format('truetype');
+  src:url('../font/f76map.eot?v=1.4.1');
+  src:url('../font/f76map.eot?#iefix&v=1.4.1') format('embedded-opentype'),
+  url('../font/f76map.woff?v=1.4.1') format('woff'),
+  url('../font/f76map.ttf?v=1.4.1') format('truetype');
   font-weight:normal;
   font-style:normal }
 
@@ -333,3 +333,23 @@
 .icon-scene:before {
   content: "\e960";
 }
+.icon-safe0:before {
+  content: "\e96b";
+}
+.icon-safe1:before {
+  content: "\e96a";
+}
+.icon-safe2:before {
+  content: "\e969";
+}
+.icon-safe3:before {
+  content: "\e968";
+}
+.icon-safekey:before {
+  content: "\e963";
+}
+
+
+
+
+
