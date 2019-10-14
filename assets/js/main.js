@@ -177,6 +177,31 @@ function tooltipTemplate(title,bobblehead=0,magazine=0,capstash=0,recipe='') {
 	result += '</div>';
  	return result;
 }
+function tooltipTemplate2(title,LocationData) {
+	//Let's group and get a count
+	const Items = LocationData.reduce((acc, currValue) => {
+		const marker = currValue.type;
+		const markercount = acc[marker] ? acc[marker] +1 : 1;
+		return {
+			...acc,
+			[marker]: markercount
+		}
+	}, {}); 
+
+	var bobblehead = Items.BobbleMarker;
+	var magazine = Items.MagazineMarker;
+	var capstash = Items.CapStashMarker;
+	var pa = Items.PArmorMarker;
+	var result = '<div class="tooltip">';
+ 	result += '<div class="tooltitle">'+title+'</div>';
+ 	if (bobblehead) result += '<div>Bobblehead: x' + bobblehead + '</div>';
+ 	if (magazine) result += '<div>Magazine: x' + magazine + '</div>';
+ 	if (capstash) result += '<div>Cap Stash: x' + capstash + '</div>';
+ 	if (pa) result += '<div>Power Armor: x' + pa + '</div>';
+ //	if (recipe) result += '<div>Recipe/Plan: x' + recipe + '</div>';
+	result += '</div>';
+ 	return result;
+}
 function tooltipMapTemplate(title,img='',text='') {
 	var result = '<div class="tooltip">';
  	result += '<div class="tooltitle">'+title+'</div>';
@@ -286,7 +311,11 @@ if (layer == 'ol_map') {
           .on("mouseover", function(evt) { this.openPopup(); })
 	  .addTo(window[layer]);
 } else {
-	  var marker = new L.marker(RemapCoord(MarkerData[i].y,MarkerData[i].x,0),{icon: window[MarkerData[i].type], title: MarkerData[i].name, riseOnHover: true}).bindTooltip(tooltipMapTemplate(MarkerData[i].name,"",""),{direction:'bottom'}).addTo(window[layer]);
+	//Let's grab the interior data for this location
+	const LocationData = InteriorData.filter(record => {
+		return record.location === MarkerData[i].location;
+	});
+	  var marker = new L.marker(RemapCoord(MarkerData[i].y,MarkerData[i].x,0),{icon: window[MarkerData[i].type], title: MarkerData[i].name, riseOnHover: true}).bindTooltip(tooltipTemplate2(MarkerData[i].name,LocationData),{direction:'bottom'}).addTo(window[layer]);
 }
 	    i++;
 	} while (i < MarkerData.length-1);
