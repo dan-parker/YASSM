@@ -191,13 +191,27 @@ function tooltipTemplate2(title,LocationData) {
 	var bobblehead = Items.BobbleMarker;
 	var magazine = Items.MagazineMarker;
 	var capstash = Items.CapStashMarker;
+	var tinkerwb = Items.TinkerWorkbenchMarker;
+	var weaponwb = Items.WeaponWorkbenchMarker;
+	var armorwb = Items.ArmorWorkbenchMarker;
+	var chemwb = Items.ChemistryWorkbenchMarker;
+	var pawb = Items.PAWorkbenchMarker;
+	var cookwb = Items.CookWorkbenchMarker;
 	var pa = Items.PArmorMarker;
+	var fcore = Items.FCoreMarker;
 	var result = '<div class="tooltip">';
  	result += '<div class="tooltitle">'+title+'</div>';
- 	if (bobblehead) result += '<div>Bobblehead: x' + bobblehead + '</div>';
- 	if (magazine) result += '<div>Magazine: x' + magazine + '</div>';
- 	if (capstash) result += '<div>Cap Stash: x' + capstash + '</div>';
- 	if (pa) result += '<div>Power Armor: x' + pa + '</div>';
+ 	if (bobblehead) result += '<span class="icon icon-bobble icon-2x mark_mag"></span>: x' + bobblehead + '';
+ 	if (magazine) result += '<span class="icon icon-magazine icon-4x mark_mag"></span>: x' + magazine + '';
+ 	if (capstash) result += '<span class="icon icon-cap icon-1x mark_fcore"></span>: x' + capstash + '';
+ 	if (pa) result += '<span class="icon icon-parmor icon-1x mark_parmor"></span>: x' + pa + '';
+ 	if (fcore) result += '<span class="icon icon-fcore icon2x mark_fcore"></span>: x' + fcore + '';
+	if (tinkerwb) result += '<span class="icon icon-tinkerbench icon-3x mark_tinkerbench"></span>: x' + tinkerwb + '';
+	if (weaponwb) result += '<span class="icon icon-weaponbench icon-3x mark_weaponbench"></span>: x' + weaponwb + '';
+	if (armorwb) result += '<span class="icon icon-armorbench icon-3x mark_armorbench"></span>: x' + armorwb + '';
+	if (chemwb) result += '<span class="icon icon-chemistrybench icon-3x mark_chembench"></span>: x' + chemwb + '';
+	if (pawb) result += '<span class="icon icon-pabench icon-3x mark_pabench"></span>: x' + pawb + '';
+	if (cookwb) result += '<span class="icon icon-cookbench icon-3x mark_cookbench"></span>: x' + cookwb + '';
  //	if (recipe) result += '<div>Recipe/Plan: x' + recipe + '</div>';
 	result += '</div>';
  	return result;
@@ -313,7 +327,7 @@ if (layer == 'ol_map') {
 } else {
 	//Let's grab the interior data for this location
 	const LocationData = InteriorData.filter(record => {
-		return record.location === MarkerData[i].location;
+		return (record.location === MarkerData[i].location || record.cell === MarkerData[i].name);
 	});
 	  var marker = new L.marker(RemapCoord(MarkerData[i].y,MarkerData[i].x,0),{icon: window[MarkerData[i].type], title: MarkerData[i].name, riseOnHover: true}).bindTooltip(tooltipTemplate2(MarkerData[i].name,LocationData),{direction:'bottom'}).addTo(window[layer]);
 }
@@ -326,6 +340,13 @@ function RemapCoord(y,x,z){
 	y=y/2250-102;
 	x=x/2250+96.5;
 	return [y,x,z]
+}
+
+
+function UnRemapCoord(x,y){
+//	y=y*2250+102;
+//	x=x*-0.2250;
+	return [x,y]
 }
 
 //Let's do our layer filters
@@ -382,6 +403,10 @@ var searchlayers = L.layerGroup([
 	});
 
 	map.addControl( controlSearch );
+	var controlPosition = new L.Control.MousePosition({
+		formatter: UnRemapCoord
+	});
+	//map.addControl( controlPosition );
 
 
 map.on('popupopen', function(e) {
