@@ -327,7 +327,7 @@ if (layer == 'ol_map') {
 } else {
 	//Let's grab the interior data for this location
 	const LocationData = InteriorData.filter(record => {
-		return (record.location === MarkerData[i].location || record.cell === MarkerData[i].name);
+		return (record.location === MarkerData[i].location || record.parent === MarkerData[i].location);
 	});
 	  var marker = new L.marker(RemapCoord(MarkerData[i].y,MarkerData[i].x,0),{icon: window[MarkerData[i].type], title: MarkerData[i].name, riseOnHover: true}).bindTooltip(tooltipTemplate2(MarkerData[i].name,LocationData),{direction:'bottom'}).addTo(window[layer]);
 }
