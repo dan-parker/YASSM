@@ -754,5 +754,10 @@
 {"id":"00535D0A","name":"Weapons Workbench","type":"WeaponWorkbenchMarker","x":-20943.267578,"y":81842.234375},
 {"id":"0054A56C","name":"Cooking Station","type":"CookWorkbenchMarker","x":-117452.226562,"y":86958.109375},
 {"id":"0055584D","name":"Armor Workbench","type":"ArmorWorkbenchMarker","x":-116145.296875,"y":86956.789062},
-{"id":"0055758B","name":"Cooking Station","type":"CookWorkbenchMarker","x":-10928.719726,"y":103216.289062}
+{"id":"0055758B","name":"Cooking Station","type":"CookWorkbenchMarker","x":-10928.719726,"y":103216.289062},
+{"id":"0058F694","name":"Cooking Station","type":"CookWorkbenchMarker","x":-7246.182129,"y":-4196.701171},
+{"id":"0058F6C7","name":"Cooking Station","type":"CookWorkbenchMarker","x":-7845.765137,"y":-4203.349609},
+{"id":"0058FAB2","name":"Cooking Station","type":"CookWorkbenchMarker","x":-9317.050781,"y":3316.960450},
+{"id":"00591FEA","name":"Cooking Station","type":"CookWorkbenchMarker","x":-6583.460937,"y":-6266.187500},
+{"id":"00592DE2","name":"Cooking Station","type":"CookWorkbenchMarker","x":-6826.843262,"y":-4347.185547}
 ]
