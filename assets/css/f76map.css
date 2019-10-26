@@ -1,9 +1,9 @@
 @font-face{
   font-family:'f76map';
-  src:url('../font/f76map.eot?v=1.4.1');
-  src:url('../font/f76map.eot?#iefix&v=1.4.1') format('embedded-opentype'),
-  url('../font/f76map.woff?v=1.4.1') format('woff'),
-  url('../font/f76map.ttf?v=1.4.1') format('truetype');
+  src:url('../font/f76map.eot?v=1.4.2');
+  src:url('../font/f76map.eot?#iefix&v=1.4.2') format('embedded-opentype'),
+  url('../font/f76map.woff?v=1.4.2') format('woff'),
+  url('../font/f76map.ttf?v=1.4.2') format('truetype');
   font-weight:normal;
   font-style:normal }
 
@@ -23,243 +23,77 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-workbench:before {
-  content: "\e900";
-  color: ;
+.icon-terminal:before {
+  content: "\e96c";
 }
-.icon-holotape:before {
+.icon-safekey:before {
+  content: "\e900";
+}
+.icon-safe3:before {
   content: "\e901";
 }
-.icon-fcore:before {
+.icon-safe2:before {
   content: "\e902";
 }
-.icon-waterplant:before {
+.icon-safe1:before {
   content: "\e903";
 }
-.icon-vault96:before {
+.icon-safe0:before {
   content: "\e904";
 }
-.icon-vault94:before {
-  content: "\e905";
+.icon-scene:before {
+  content: "\e960";
 }
-.icon-vault76:before {
-  content: "\e906";
+.icon-travel:before {
+  content: "\e961";
 }
-.icon-vault63:before {
-  content: "\e907";
+.icon-object:before {
+  content: "\e962";
 }
-.icon-vault:before {
-  content: "\e908";
+.icon-chemistrybench:before {
+  content: "\e95f";
 }
-.icon-tree:before {
-  content: "\e909";
+.icon-cookbench:before {
+  content: "\e95e";
 }
-.icon-trainyard:before {
-  content: "\e90a";
+.icon-pabench:before {
+  content: "\e964";
 }
-.icon-trainstation:before {
-  content: "\e90b";
+.icon-weaponbench:before {
+  content: "\e965";
 }
-.icon-town:before {
-  content: "\e90c";
+.icon-armorbench:before {
+  content: "\e966";
 }
-.icon-top:before {
-  content: "\e90d";
+.icon-tinkerbench:before {
+  content: "\e967";
 }
-.icon-teapot:before {
-  content: "\e90e";
+.icon-bobble:before {
+  content: "\e95c";
 }
-.icon-substation:before {
-  content: "\e90f";
+.icon-nukacola:before {
+  content: "\e959";
 }
-.icon-statue:before {
-  content: "\e910";
+.icon-cap:before {
+  content: "\e95a";
 }
-.icon-spacestation:before {
-  content: "\e911";
+.icon-magazine:before {
+  content: "\e95b";
 }
-.icon-snow:before {
-  content: "\e912";
+.icon-unknown:before {
+  content: "\e957";
 }
-.icon-shack:before {
-  content: "\e913";
+.icon-camera:before {
+  content: "\e958";
 }
-.icon-scraper:before {
-  content: "\e914";
+.icon-ruintown:before {
+  content: "\e956";
 }
-.icon-rocks:before {
-  content: "\e915";
+.icon-sewer:before {
+  content: "\e955";
 }
-.icon-rocket:before {
-  content: "\e916";
-}
-.icon-resort:before {
-  content: "\e917";
-}
-.icon-railyard:before {
-  content: "\e918";
-}
-.icon-raider:before {
-  content: "\e919";
-}
-.icon-radiotower:before {
-  content: "\e91a";
-}
-.icon-quarry:before {
-  content: "\e91b";
-}
-.icon-pumpkin:before {
-  content: "\e91c";
-}
-.icon-pub:before {
-  content: "\e91d";
-}
-.icon-prison:before {
-  content: "\e91e";
-}
-.icon-power:before {
-  content: "\e91f";
-}
-.icon-pond:before {
-  content: "\e920";
-}
-.icon-plane:before {
-  content: "\e921";
-}
-.icon-perch:before {
-  content: "\e922";
-}
-.icon-parmor:before {
-  content: "\e923";
-}
-.icon-palace:before {
-  content: "\e924";
-}
-.icon-observatory:before {
-  content: "\e925";
-}
-.icon-nuka:before {
-  content: "\e926";
-}
-.icon-monorail:before {
-  content: "\e927";
-}
-.icon-mine:before {
-  content: "\e928";
-}
-.icon-med:before {
-  content: "\e929";
-}
-.icon-mansion:before {
-  content: "\e92a";
-}
-.icon-manor:before {
-  content: "\e92b";
-}
-.icon-lookout:before {
-  content: "\e92c";
-}
-.icon-lighthouse:before {
-  content: "\e92d";
-}
-.icon-houses:before {
-  content: "\e92e";
-}
-.icon-hotdog:before {
-  content: "\e92f";
-}
-.icon-headquarters:before {
-  content: "\e930";
-}
-.icon-golf:before {
-  content: "\e931";
-}
-.icon-fort:before {
-  content: "\e932";
-}
-.icon-fissure:before {
-  content: "\e933";
-}
-.icon-firedept:before {
-  content: "\e934";
-}
-.icon-farm:before {
-  content: "\e935";
-}
-.icon-fair:before {
-  content: "\e936";
-}
-.icon-factory:before {
-  content: "\e937";
-}
-.icon-dock:before {
-  content: "\e938";
-}
-.icon-disposal:before {
-  content: "\e939";
-}
-.icon-dish:before {
-  content: "\e93a";
-}
-.icon-dam:before {
-  content: "\e93b";
-}
-.icon-cream:before {
-  content: "\e93c";
-}
-.icon-city:before {
-  content: "\e93d";
-}
-.icon-church:before {
-  content: "\e93e";
-}
-.icon-cemetery:before {
-  content: "\e93f";
-}
-.icon-capital:before {
-  content: "\e940";
-}
-.icon-camp:before {
-  content: "\e941";
-}
-.icon-cabin:before {
-  content: "\e942";
-}
-.icon-bunker:before {
-  content: "\e943";
-}
-.icon-bridge:before {
-  content: "\e944";
-}
-.icon-base:before {
-  content: "\e945";
-}
-.icon-arktos:before {
-  content: "\e946";
-}
-.icon-antiques:before {
-  content: "\e947";
-}
-.icon-agcenter:before {
-  content: "\e948";
-}
-.icon-freestate:before {
-  content: "\e949";
-}
-.icon-bos:before {
-  content: "\e94a";
-}
-.icon-map:before {
-  content: "\e94b";
-}
-.icon-enclave:before {
-  content: "\e94c";
-}
-.icon-responders:before {
-  content: "\e94d";
-}
-.icon-mysteries:before {
-  content: "\e94e";
+.icon-table:before {
+  content: "\e954";
 }
 .icon-death:before {
   content: "\e94f";
@@ -276,80 +110,240 @@
 .icon-boat:before {
   content: "\e953";
 }
-.icon-table:before {
-  content: "\e954";
+.icon-mysteries:before {
+  content: "\e94e";
 }
-.icon-sewer:before {
-  content: "\e955";
+.icon-enclave:before {
+  content: "\e94c";
 }
-.icon-ruintown:before {
-  content: "\e956";
+.icon-responders:before {
+  content: "\e94d";
 }
-.icon-unknown:before {
-  content: "\e957";
+.icon-map:before {
+  content: "\e94b";
 }
-.icon-camera:before {
-  content: "\e958";
+.icon-freestate:before {
+  content: "\e949";
 }
-.icon-nukacola:before {
-  content: "\e959";
+.icon-bos:before {
+  content: "\e94a";
 }
-.icon-cap:before {
-  content: "\e95a";
+.icon-fcore:before {
+  content: "\e905";
 }
-.icon-magazine:before {
-  content: "\e95b";
+.icon-holotape:before {
+  content: "\e906";
 }
-.icon-bobble:before {
-  content: "\e95c";
+.icon-workbench:before {
+  content: "\e907";
 }
-.icon-workbench1:before {
-  content: "\e95d";
+.icon-waterplant:before {
+  content: "\e908";
 }
-.icon-tinkerbench:before {
-  content: "\e967";
+.icon-vault96:before {
+  content: "\e909";
 }
-.icon-armorbench:before {
-  content: "\e966";
+.icon-vault94:before {
+  content: "\e90a";
 }
-.icon-weaponbench:before {
-  content: "\e965";
+.icon-vault76:before {
+  content: "\e90b";
 }
-.icon-pabench:before {
-  content: "\e964";
+.icon-vault63:before {
+  content: "\e90c";
 }
-.icon-cookbench:before {
-  content: "\e95e";
+.icon-vault:before {
+  content: "\e90d";
 }
-.icon-chemistrybench:before {
-  content: "\e95f";
+.icon-tree:before {
+  content: "\e90e";
 }
-.icon-object:before {
-  content: "\e962";
+.icon-trainyard:before {
+  content: "\e90f";
 }
-.icon-travel:before {
-  content: "\e961";
+.icon-trainstation:before {
+  content: "\e910";
 }
-.icon-scene:before {
-  content: "\e960";
+.icon-town:before {
+  content: "\e911";
 }
-.icon-safe0:before {
-  content: "\e96b";
+.icon-top:before {
+  content: "\e912";
 }
-.icon-safe1:before {
-  content: "\e96a";
+.icon-teapot:before {
+  content: "\e913";
 }
-.icon-safe2:before {
-  content: "\e969";
+.icon-substation:before {
+  content: "\e914";
 }
-.icon-safe3:before {
-  content: "\e968";
+.icon-statue:before {
+  content: "\e915";
 }
-.icon-safekey:before {
+.icon-spacestation:before {
+  content: "\e916";
+}
+.icon-snow:before {
+  content: "\e917";
+}
+.icon-shack:before {
+  content: "\e918";
+}
+.icon-scraper:before {
+  content: "\e919";
+}
+.icon-rocks:before {
+  content: "\e91a";
+}
+.icon-rocket:before {
+  content: "\e91b";
+}
+.icon-resort:before {
+  content: "\e91c";
+}
+.icon-railyard:before {
+  content: "\e91d";
+}
+.icon-raider:before {
+  content: "\e91e";
+}
+.icon-radiotower:before {
+  content: "\e91f";
+}
+.icon-quarry:before {
+  content: "\e920";
+}
+.icon-pumpkin:before {
+  content: "\e921";
+}
+.icon-pub:before {
+  content: "\e922";
+}
+.icon-prison:before {
+  content: "\e923";
+}
+.icon-power:before {
+  content: "\e924";
+}
+.icon-pond:before {
+  content: "\e925";
+}
+.icon-plane:before {
+  content: "\e926";
+}
+.icon-perch:before {
+  content: "\e927";
+}
+.icon-parmor:before {
+  content: "\e928";
+}
+.icon-palace:before {
+  content: "\e929";
+}
+.icon-observatory:before {
+  content: "\e92a";
+}
+.icon-nuka:before {
+  content: "\e92b";
+}
+.icon-monorail:before {
+  content: "\e92c";
+}
+.icon-mine:before {
+  content: "\e92d";
+}
+.icon-med:before {
+  content: "\e92e";
+}
+.icon-mansion:before {
+  content: "\e92f";
+}
+.icon-manor:before {
+  content: "\e930";
+}
+.icon-lookout:before {
+  content: "\e931";
+}
+.icon-lighthouse:before {
+  content: "\e932";
+}
+.icon-houses:before {
+  content: "\e933";
+}
+.icon-hotdog:before {
+  content: "\e934";
+}
+.icon-headquarters:before {
+  content: "\e935";
+}
+.icon-golf:before {
+  content: "\e936";
+}
+.icon-fort:before {
+  content: "\e937";
+}
+.icon-fissure:before {
+  content: "\e938";
+}
+.icon-firedept:before {
+  content: "\e939";
+}
+.icon-farm:before {
+  content: "\e93a";
+}
+.icon-fair:before {
+  content: "\e93b";
+}
+.icon-factory:before {
+  content: "\e93c";
+}
+.icon-dock:before {
+  content: "\e93d";
+}
+.icon-disposal:before {
+  content: "\e93e";
+}
+.icon-dish:before {
+  content: "\e93f";
+}
+.icon-dam:before {
+  content: "\e940";
+}
+.icon-cream:before {
+  content: "\e941";
+}
+.icon-city:before {
+  content: "\e942";
+}
+.icon-church:before {
+  content: "\e943";
+}
+.icon-cemetery:before {
+  content: "\e944";
+}
+.icon-capital:before {
+  content: "\e945";
+}
+.icon-camp:before {
+  content: "\e946";
+}
+.icon-cabin:before {
+  content: "\e947";
+}
+.icon-bunker:before {
+  content: "\e948";
+}
+.icon-bridge:before {
   content: "\e963";
 }
-
-
-
-
-
+.icon-base:before {
+  content: "\e968";
+}
+.icon-arktos:before {
+  content: "\e969";
+}
+.icon-antiques:before {
+  content: "\e96a";
+}
+.icon-agcenter:before {
+  content: "\e96b";
+}
