@@ -244,6 +244,25 @@ mark_nukaorange {
 
 .tooltitle {font-weight:bold;font-size: 0.9vw;}
 
+body.monochrome {
+  z-index: 7600;
+  background: linear-gradient(#006f16 50%, #09ff3a 50%);
+  background-size: 100% 4px;
+  background-repeat: repeat-y;
+  opacity: .86;
+  animation: pulse 5s linear infinite;
+}
+.monochrome #mapid{
+filter: grayscale(100%);background-color:#09ff3a;opacity: 80%;
+}
+
+@keyframes pulse {
+  0%   {opacity: .86; }
+  8%   {opacity: .96; }
+  15%  {opacity: .86; }
+  30%  {opacity: .96; }
+  100% {opacity: .86; }
+}
 
  /* ==========================================================================
    Helper classes

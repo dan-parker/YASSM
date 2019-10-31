@@ -409,6 +409,24 @@ var searchlayers = L.layerGroup([
 	//map.addControl( controlPosition );
 
 
+    var htmlLegend = L.control.htmllegend({
+        position: 'topright',
+        legends: [{
+            name: '',
+            elements: [{
+                label: '',
+                html: '<button onClick=\"document.getElementById(\'body\').classList.toggle(\'monochrome\');\">Scanlines</button>'
+            },
+	]
+        }],
+        collapseSimple: true,
+        detectStretched: true,
+        disableVisibilityControls: true
+    });
+    map.addControl(htmlLegend);
+
+
+
 map.on('popupopen', function(e) {
     var px = map.project(e.popup._latlng); // find the pixel location on the map where the popup anchor is
     px.y -= e.popup._container.clientHeight/2 // find the height of the popup container, divide by 2, subtract from the Y axis of marker location
