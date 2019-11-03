@@ -17,6 +17,7 @@ var ol_event = L.layerGroup();
 var ol_locv = L.layerGroup();
 var ol_cb = L.layerGroup();
 var ol_safe = L.layerGroup();
+var ol_critter = L.layerGroup();
 
 // the tile layer containing the image generated with `gdal2tiles --leaflet -p raster -w none <img> tiles`
 var baselayer = L.tileLayer('./assets/tiles/{z}/{x}/{y}.png', {
@@ -92,6 +93,7 @@ var SafeMarker_Lvl_1 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'saf
 var SafeMarker_Lvl_2 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'safe2', className:'mark_pabench icon-2x'}) 	//Safe Level 0
 var SafeMarker_Lvl_3 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'safe3', className:'mark_cookbench icon-2x'}) 	//Safe Level 0
 var SafeMarker_Lvl_Key = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'safekey', className:'mark_tinkerbench icon-2x'}) 	//Safe Level 0
+var CritterMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'unknown', className:'mark_rift icon-1x'}) 	//Random Spawn
 
 var FarmMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'farm', className:'mark_lo icon1x'}); 		//Farm/Homestead
 var CabinMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'cabin', className:'mark_lo icon-2x'});  		//Farm/Cabin
@@ -312,6 +314,9 @@ var CaveMarker2 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'mine', c
 		case (MarkerData[i].type == "WorkbenchMarker"):
 		var layer = "ol_cb";
 		break;
+		case (MarkerData[i].type == "CritterMarker"):
+		var layer = "ol_critter";
+		break;
 		case ((MarkerData[i].type).startsWith("SafeMarker")):
 		var layer = "ol_safe";
 		break;
@@ -370,6 +375,7 @@ var overlays = {
 	"Treasure Map": ol_map,
 	"Crafting Bench": ol_cb,
 	"Locked Safes": ol_safe,
+	"Critter Spawn": ol_critter,
 };
 
 L.control.layers(null, overlays, {autoZIndex:true}).addTo(map);
