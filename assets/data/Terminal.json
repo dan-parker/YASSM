@@ -1,0 +1,13 @@
+[
+{"id":"0027D8FE","name":"DefaultTerminalWall ""Terminal"" [TERM:000D981B]","type":"TerminalMarker_Lvl_1","x":109647.015625,"y":181649.328125,"z":21586.583984},
+{"id":"002998DF","name":"DefaultTerminalDesk ""Terminal"" [TERM:000F616A]","type":"TerminalMarker_Lvl_2","x":127848.593750,"y":26433.849609,"z":14017.090821},
+{"id":"002DAD31","name":"LC196_SonsOfDaneLeaderTerminal ""Dane Roger's Terminal"" [TERM:0029DF90]","type":"TerminalMarker_Lvl_2","x":99057.375000,"y":95347.437500,"z":25665.796875},
+{"id":"00322224","name":"LC144_GuestTerminal ""Guest Terminal"" [TERM:00322223]","type":"TerminalMarker_Lvl_1","x":86110.929688,"y":133727.906250,"z":34304.207031},
+{"id":"00346CB9","name":"DefaultTerminalWall ""Terminal"" [TERM:000D981B]","type":"TerminalMarker_Lvl_1","x":61170.695313,"y":167281.921875,"z":26901.388672},
+{"id":"00357FEB","name":"MoM03_BrodysTerminal ""Brody's Terminal"" [TERM:00357FED]","type":"TerminalMarker_Lvl_3","x":46353.882813,"y":24936.681641,"z":33554.949218},
+{"id":"003B5884","name":"BoSZ03_ArtilleryBatteryTerminal ""Artillery Battery Terminal"" [TERM:00313080]","type":"TerminalMarker_Lvl_Password","x":107311.304687,"y":-131860.546875,"z":10920.000000},
+{"id":"003C74DB","name":"LC090_MonongahMine_SupervisorTerminal ""Mining Supervisor's Terminal"" [TERM:0031A4FA]","type":"TerminalMarker_Lvl_2","x":55780.125000,"y":111695.726563,"z":32352.722656},
+{"id":"003CF557","name":"LC191_SiteDirectorTerminal ""Site Director's Terminal"" [TERM:003CF554]","type":"TerminalMarker_Lvl_1","x":1180.454590,"y":-152302.234375,"z":33568.882812},
+{"id":"00451258","name":"DefaultTerminalWall ""Terminal"" [TERM:000D981B]","type":"TerminalMarker_Lvl_1","x":55784.718750,"y":82188.648437,"z":23185.177734},
+{"id":"0045125D","name":"DefaultTerminalWall ""Terminal"" [TERM:000D981B]","type":"TerminalMarker_Lvl_3","x":5111.077148,"y":120301.203125,"z":13481.489258}
+]
