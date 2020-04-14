@@ -1,9 +1,9 @@
 @font-face{
   font-family:'f76map';
-  src:url('../font/f76map.eot?v=1.4.2');
-  src:url('../font/f76map.eot?#iefix&v=1.4.2') format('embedded-opentype'),
-  url('../font/f76map.woff?v=1.4.2') format('woff'),
-  url('../font/f76map.ttf?v=1.4.2') format('truetype');
+  src:url('../font/f76map.eot?v=1.4.5');
+  src:url('../font/f76map.eot?#iefix&v=1.4.5') format('embedded-opentype'),
+  url('../font/f76map.woff?v=1.4.5') format('woff'),
+  url('../font/f76map.ttf?v=1.4.5') format('truetype');
   font-weight:normal;
   font-style:normal }
 
@@ -23,6 +23,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-bloodeagle:before {
+  content: "\e95d";
+}
+.icon-cultist:before {
+  content: "\e96d";
+}
+.icon-vault79:before {
+  content: "\e96e";
+}
+.icon-foundation:before {
+  content: "\e96f";
+}
+.icon-crater:before {
+  content: "\e970";
+}
 .icon-terminal:before {
   content: "\e96c";
 }

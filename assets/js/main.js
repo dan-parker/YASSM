@@ -57,11 +57,13 @@ map.setView(rc.unproject([805,975]),3)
 
 var TrainStationMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'trainstation', className:'mark_vendor icon-2x'}); //Train Station
 var WorkshopMarker =  L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'workbench', className:'mark_wr icon1x'}); 	//Public Workbench
+var PublicWorkshopMarker =  L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'workbench', className:'mark_vendor icon1x'}); 	//Public Workbench
 var Vault76Marker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'vault76', className:'mark_va icon1x'}); 	//Vault76
 var Vault63Marker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'vault63', className:'mark_va icon1x'}); 	//Vault63
 var VaultMarker51 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'vault', className:'mark_va icon1x'}); 	//Vault51
 var Vault94Marker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'vault94', className:'mark_va icon1x'}); 	//Vault94
 var Vault96Marker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'vault96', className:'mark_va icon1x'}); 	//Vault96
+var Vault79Marker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'vault79', className:'mark_va icon1x'}); 	//Vault79
 var VaultMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'vault', className:'mark_va icon1x'}); 		//Vault
 var TreasureMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'map', className:'mark_tm icon-2x'}); 	//Treasure Map
 var HoloMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'holotape', className:'mark_tape icon3x'}); 	//Holotape
@@ -75,6 +77,7 @@ var NukaColaWildMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'n
 var NukaColaGrapeMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'nukacola', className:'mark_nukagrape icon-2x'}); //Cola
 var NukaColaOrangeMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'nukacola', className:'mark_nukaorange icon-2x'}); //Cola
 var NukaColaDarkMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'nukacola', className:'mark_nukadark icon-2x'}); //Cola
+var NukaColaCranberryMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'nukacola', className:'mark_nukacran icon-2x'}); //Cola
 var PArmorMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'parmor', className:'mark_parmor icon-1x'}); 	//Power Armor
 var FissureMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'fissure', className:'mark_rift icon-1x'}); 	//Fissure
 var CameraMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'camera', className:'mark_camera icon1x'}); 	//Tourist
@@ -82,6 +85,7 @@ var MistressMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'myste
 var TravelEncounterMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'travel', className:'mark_rift icon-1x'}) 	//Random Spawn
 var ObjectEncounterMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'object', className:'mark_rift icon-1x'}) 	//Random Spawn
 var SceneEncounterMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'scene', className:'mark_rift icon-1x'}) 	//Random Spawn
+var CampEncounterMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'travel', className:'mark_rift icon-1x'}) 	//Random Spawn
 var ArmorWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'armorbench', className:'mark_armorbench icon-3x'}); //Workbench
 var WeaponWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'weaponbench', className:'mark_weaponbench icon-3x'}); //Workbench
 var PAWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'pabench', className:'mark_pabench icon-3x'}); //Workbench
@@ -149,7 +153,7 @@ var GoodneighborMarker =  L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: '
 var PondLakeMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'pond', className:'mark_lo icon1x'}); 		//Pond
 var SancHillsMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'statue', className:'mark_lo icon1x'}); 		//Statue
 var SpaceStationMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'spacestation', className:'mark_lo icon1x'}); //Spacestation
-var CastleMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'fort', className:'mark_lo icon-1x'}); 		//Fort
+var CastleMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'fort', className:'mark_lo icon-2x'}); 		//Fort
 var QuarryMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'quarry', className:'mark_lo icon-1x'}); 		//Quarry
 var BunkerMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'bunker', className:'mark_lo icon-4x'}); 		//Bunker
 var mark_vendorbunker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'bunker', className:'mark_vendor icon-4x'}); 	//Bunker-Vendor
@@ -167,6 +171,11 @@ var ChurchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'church'
 var AppalachianAntiquesMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'antiques', className:'mark_lo icon-1x'}); 	//Antiques
 var SewerMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'sewer', className:'mark_lo icon1x'}); 		//Sewer
 
+var BloodEaglesMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'bloodeagle', className:'mark_lo icon2x'}) 	//Random Spawn
+var CultistMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'cultist', className:'mark_lo icon-1x'}) 	//Random Spawn
+var CraterMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'crater', className:'mark_vendor icon2x'}); //Spacestation
+var RaiderMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'crater', className:'mark_lo icon2x'}); //Spacestation
+var SettlerMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'foundation', className:'mark_vendor icon1x'}); //Spacestation
 
 //Let's create our Tooltip Template
 function tooltipTemplate(title,bobblehead=0,magazine=0,capstash=0,recipe='') {
@@ -201,6 +210,7 @@ function tooltipTemplate2(title,LocationData) {
 	var cookwb = Items.CookWorkbenchMarker;
 	var pa = Items.PArmorMarker;
 	var fcore = Items.FCoreMarker;
+	var nukaquantum = Items.NukaColaQuantumMarker;
 	var result = '<div class="tooltip">';
  	result += '<div class="tooltitle">'+title+'</div>';
  	if (bobblehead) result += '<span class="icon icon-bobble icon-2x mark_mag"></span>: x' + bobblehead + '';
@@ -214,6 +224,7 @@ function tooltipTemplate2(title,LocationData) {
 	if (chemwb) result += '<span class="icon icon-chemistrybench icon-3x mark_chembench"></span>: x' + chemwb + '';
 	if (pawb) result += '<span class="icon icon-pabench icon-3x mark_pabench"></span>: x' + pawb + '';
 	if (cookwb) result += '<span class="icon icon-cookbench icon-3x mark_cookbench"></span>: x' + cookwb + '';
+	if (nukaquantum) result += '<span class="icon icon-nukacola icon-3x mark_nukaquantum"></span>: x' + nukaquantum + '';
  //	if (recipe) result += '<div>Recipe/Plan: x' + recipe + '</div>';
 	result += '</div>';
  	return result;
@@ -270,6 +281,9 @@ var CaveMarker2 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'mine', c
 		var layer = "ol_train";
 		break;
 		case (MarkerData[i].type == "WorkshopMarker"):
+		var layer = "ol_wb";
+		break;
+		case (MarkerData[i].type == "PublicWorkshopMarker"):
 		var layer = "ol_wb";
 		break;
 		case ( (/^Vault\d.*Marker/).test(MarkerData[i].type) ):
@@ -334,6 +348,7 @@ if (layer == 'ol_map') {
 	const LocationData = InteriorData.filter(record => {
 		return (record.location === MarkerData[i].location || record.parent === MarkerData[i].location);
 	});
+	//console.log(MarkerData[i].type);
 	  var marker = new L.marker(RemapCoord(MarkerData[i].y,MarkerData[i].x,0),{icon: window[MarkerData[i].type], title: MarkerData[i].name, riseOnHover: true}).bindTooltip(tooltipTemplate2(MarkerData[i].name,LocationData),{direction:'bottom'}).addTo(window[layer]);
 }
 	    i++;
@@ -403,7 +418,7 @@ var searchlayers = L.layerGroup([
 				weight: 3,
 				color: '#e03',
 				stroke: true,
-				fill: false
+				fill: true
 			}
 		}
 	});

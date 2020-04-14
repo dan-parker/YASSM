@@ -30,7 +30,7 @@
 {"id":"00340E64","name":"LootPriorityPrewar_Safe \"Safe\" [CONT:0008CD00]","type":"SafeMarker_Lvl_2","x":123228.062500,"y":18811.414063,"z":15373.375000},
 {"id":"003427C2","name":"LootPriorityPrewar_Safe \"Safe\" [CONT:0008CD00]","type":"SafeMarker_Lvl_2","x":121598.085938,"y":24246.183594,"z":15667.216796},
 {"id":"0034D8CA","name":"LootPriorityPrewar_Safe_Floor \"Safe\" [CONT:00064A39]","type":"SafeMarker_Lvl_3","x":37440.542968,"y":69278.117187,"z":21849.044922},
-{"id":"0034E895","name":"LootPriorityPrewar_Safe \"Safe\" [CONT:0008CD00]","type":"SafeMarker_Lvl_2","x":42352.222656,"y":-64713.609375,"z":32558.505860},
+{"id":"0034E895","name":"LootPriorityPrewar_Safe \"Safe\" [CONT:0008CD00]","type":"SafeMarker_Lvl_2","x":42363.296875,"y":-64713.484375,"z":32558.505860},
 {"id":"0034E897","name":"LootPriorityPrewar_Safe \"Safe\" [CONT:0008CD00]","type":"SafeMarker_Lvl_3","x":36215.312500,"y":-61747.496094,"z":32552.958985},
 {"id":"00364628","name":"LootPriorityPrewar_Safe \"Safe\" [CONT:0008CD00]","type":"SafeMarker_Lvl_2","x":22409.087890,"y":-104919.601562,"z":35500.281250},
 {"id":"00386C47","name":"LootPriorityPrewar_Safe_Wall \"Safe\" [CONT:0006D4C3]","type":"SafeMarker_Lvl_1","x":26027.705078,"y":100661.562500,"z":23837.443360},
@@ -48,5 +48,7 @@
 {"id":"003D1ED7","name":"LootPriorityPrewar_Safe_Wall \"Safe\" [CONT:0006D4C3]","type":"SafeMarker_Lvl_1","x":164.004609,"y":-33454.421875,"z":22554.857422},
 {"id":"003D4ED1","name":"LootPriorityPrewar_Safe_Floor \"Safe\" [CONT:00064A39]","type":"SafeMarker_Lvl_2","x":58861.546875,"y":168849.671875,"z":27029.945313},
 {"id":"005187FD","name":"LootPriorityPrewar_Safe \"Safe\" [CONT:0008CD00]","type":"SafeMarker_Lvl_1","x":4052.011719,"y":103608.078125,"z":11829.000000},
-{"id":"0051EEFF","name":"LootPriorityPrewar_Safe_Floor \"Safe\" [CONT:00064A39]","type":"SafeMarker_Lvl_1","x":3462.483154,"y":-118598.500000,"z":31911.707031}
+{"id":"0051EEFF","name":"LootPriorityPrewar_Safe_Floor \"Safe\" [CONT:00064A39]","type":"SafeMarker_Lvl_1","x":3462.483154,"y":-118598.500000,"z":31911.707031},
+{"id":"0055F215","name":"LootPriorityPrewar_Safe_Drugs \"Safe\" [CONT:0021A172]","type":"SafeMarker_Lvl_3","x":79943.882812,"y":175916.406250,"z":25153.507812},
+{"id":"005641F1","name":"LootPriorityPrewar_Safe \"Safe\" [CONT:0008CD00]","type":"SafeMarker_Lvl_0","x":76312.804687,"y":-179841.906250,"z":20413.507812}
 ]
