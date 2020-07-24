@@ -281,7 +281,7 @@
 {"id":"0059A92C","name":"Camp Encounter","type":"CampEncounterMarker","x":27058.662110,"y":-92027.914063},
 {"id":"0059A971","name":"Camp Encounter","type":"CampEncounterMarker","x":96137.382812,"y":67739.671875},
 {"id":"0059A99C","name":"Camp Encounter","type":"CampEncounterMarker","x":74676.234375,"y":-27417.378906},
-{"id":"0059A9B0","name":"Camp Encounter","type":"CampEncounterMarker","x":-4837.812012,"y":152398.859375},
+{"id":"0059A9B0","name":"Camp Encounter","type":"CampEncounterMarker","x":-4837.814453,"y":152398.859375},
 {"id":"0059AA4E","name":"Camp Encounter","type":"CampEncounterMarker","x":-18014.625000,"y":140189.531250},
 {"id":"0059C639","name":"Object Encounter","type":"ObjectEncounterMarker","x":151243.796875,"y":-6145.674316},
 {"id":"0059D8B3","name":"Scene Encounter","type":"SceneEncounterMarker","x":10856.636719,"y":195442.500000},

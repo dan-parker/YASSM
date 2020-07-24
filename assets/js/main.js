@@ -176,6 +176,7 @@ var CultistMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'cultis
 var CraterMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'crater', className:'mark_vendor icon2x'}); //Spacestation
 var RaiderMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'crater', className:'mark_lo icon2x'}); //Spacestation
 var SettlerMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'foundation', className:'mark_vendor icon1x'}); //Spacestation
+var LegendaryPurveyorMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'legendarypurveyor', className:'mark_lo icon1x'}); //Mumbles
 
 //Let's create our Tooltip Template
 function tooltipTemplate(title,bobblehead=0,magazine=0,capstash=0,recipe='') {
