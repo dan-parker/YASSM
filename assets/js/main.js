@@ -92,6 +92,7 @@ var PAWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'pa
 var CookWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'cookbench', className:'mark_cookbench icon-3x'}); //Workbench
 var TinkerWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'tinkerbench', className:'mark_tinkerbench icon-3x'}); //Workbench
 var ChemistryWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'chemistrybench', className:'mark_chembench icon-3x'}); //Workbench
+var BrewingWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'brewingbench', className:'mark_brewbench icon-2x'}); //Workbench
 var SafeMarker_Lvl_0 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'safe0', className:'mark_armorbench icon-2x'}) 	//Safe Level 0
 var SafeMarker_Lvl_1 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'safe1', className:'mark_weaponbench icon-2x'}) 	//Safe Level 0
 var SafeMarker_Lvl_2 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'safe2', className:'mark_pabench icon-2x'}) 	//Safe Level 0
@@ -209,6 +210,7 @@ function tooltipTemplate2(title,LocationData) {
 	var chemwb = Items.ChemistryWorkbenchMarker;
 	var pawb = Items.PAWorkbenchMarker;
 	var cookwb = Items.CookWorkbenchMarker;
+	var brewwb = Items.BrewingWorkbenchMarker;
 	var pa = Items.PArmorMarker;
 	var fcore = Items.FCoreMarker;
 	var nukaquantum = Items.NukaColaQuantumMarker;
