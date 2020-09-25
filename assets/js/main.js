@@ -86,6 +86,7 @@ var TravelEncounterMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph:
 var ObjectEncounterMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'object', className:'mark_rift icon-1x'}) 	//Random Spawn
 var SceneEncounterMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'scene', className:'mark_rift icon-1x'}) 	//Random Spawn
 var CampEncounterMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'campencounter', className:'mark_rift icon-1x'}) 	//Random Spawn
+var AllyMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'ally', className:'mark_rift icon-1x'}) 	//Random Spawn
 var ArmorWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'armorbench', className:'mark_armorbench icon-3x'}); //Workbench
 var WeaponWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'weaponbench', className:'mark_weaponbench icon-3x'}); //Workbench
 var PAWorkbenchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'pabench', className:'mark_pabench icon-3x'}); //Workbench
@@ -225,6 +226,7 @@ function tooltipTemplate2(title,LocationData) {
 	if (weaponwb) result += '<span class="icon icon-weaponbench icon-3x mark_weaponbench"></span>: x' + weaponwb + '';
 	if (armorwb) result += '<span class="icon icon-armorbench icon-3x mark_armorbench"></span>: x' + armorwb + '';
 	if (chemwb) result += '<span class="icon icon-chemistrybench icon-3x mark_chembench"></span>: x' + chemwb + '';
+	if (brewwb) result += '<span class="icon icon-brewingbench icon-2x mark_brewbench"></span>: x' + brewwb + '';
 	if (pawb) result += '<span class="icon icon-pabench icon-3x mark_pabench"></span>: x' + pawb + '';
 	if (cookwb) result += '<span class="icon icon-cookbench icon-3x mark_cookbench"></span>: x' + cookwb + '';
 	if (nukaquantum) result += '<span class="icon icon-nukacola icon-3x mark_nukaquantum"></span>: x' + nukaquantum + '';
@@ -299,6 +301,9 @@ var CaveMarker2 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'mine', c
 		var layer = "ol_pa";
 		break;
 		case ((MarkerData[i].type).endsWith("EncounterMarker")):
+		var layer = "ol_event";
+		break;
+		case (MarkerData[i].type == "AllyMarker"):
 		var layer = "ol_event";
 		break;
 		case (MarkerData[i].type == "CameraMarker"):
