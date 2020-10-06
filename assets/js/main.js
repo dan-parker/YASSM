@@ -172,6 +172,7 @@ var MonorailMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'monor
 var ChurchMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'church', className:'mark_lo icon1x'}); 		//Church
 var AppalachianAntiquesMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'antiques', className:'mark_lo icon-1x'}); 	//Antiques
 var SewerMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'sewer', className:'mark_lo icon1x'}); 		//Sewer
+var SettlementMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'settlement', className:'mark_lo icon1x'}); 		//Settlement
 
 var BloodEaglesMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'bloodeagle', className:'mark_lo icon2x'}) 	//Random Spawn
 var CultistMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'cultist', className:'mark_lo icon-1x'}) 	//Random Spawn
