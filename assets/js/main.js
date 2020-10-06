@@ -60,7 +60,7 @@ var WorkshopMarker =  L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'work
 var PublicWorkshopMarker =  L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'workbench', className:'mark_vendor icon1x'}); 	//Public Workbench
 var Vault76Marker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'vault76', className:'mark_va icon1x'}); 	//Vault76
 var Vault63Marker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'vault63', className:'mark_va icon1x'}); 	//Vault63
-var VaultMarker51 = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'vault', className:'mark_va icon1x'}); 	//Vault51
+var Vault51Marker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'vault51', className:'mark_va icon1x'}); 	//Vault51
 var Vault94Marker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'vault94', className:'mark_va icon1x'}); 	//Vault94
 var Vault96Marker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'vault96', className:'mark_va icon1x'}); 	//Vault96
 var Vault79Marker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'vault79', className:'mark_va icon1x'}); 	//Vault79
@@ -179,6 +179,7 @@ var CraterMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'crater'
 var RaiderMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'crater', className:'mark_lo icon2x'}); //Spacestation
 var SettlerMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'foundation', className:'mark_vendor icon1x'}); //Spacestation
 var LegendaryPurveyorMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'legendarypurveyor', className:'mark_lo icon1x'}); //Mumbles
+var BoSMarker = L.icon.glyph({ iconUrl: null, prefix: 'icon', glyph: 'bos', className:'mark_lo icon1x'}); //Fort Atlas
 
 //Let's create our Tooltip Template
 function tooltipTemplate(title,bobblehead=0,magazine=0,capstash=0,recipe='') {
