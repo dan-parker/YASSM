@@ -30,7 +30,7 @@ var baselayer = L.tileLayer('./assets/tiles/{z}/{x}/{y}.png', {
 var map = L.map('mapid', {
   layers: [baselayer, ol_rift, ol_loc,ol_vault,ol_train,ol_wb],
   crs: L.CRS.Simple,
-  fullscreenControl: false,
+  fullscreenControl: true,
   fullscreenControlOptions: {
     position: 'topleft'
   },
@@ -438,25 +438,6 @@ var searchlayers = L.layerGroup([
 		formatter: UnRemapCoord
 	});
 	//map.addControl( controlPosition );
-
-
-    var htmlLegend = L.control.htmllegend({
-        position: 'topright',
-        legends: [{
-            name: '',
-            elements: [{
-                label: '',
-                html: '<button onClick=\"document.getElementById(\'body\').classList.toggle(\'monochrome\');\">Scanlines</button>'
-            },
-	]
-        }],
-        collapseSimple: true,
-        detectStretched: true,
-        disableVisibilityControls: true
-    });
-    map.addControl(htmlLegend);
-
-
 
 map.on('popupopen', function(e) {
     var px = map.project(e.popup._latlng); // find the pixel location on the map where the popup anchor is
