@@ -250,6 +250,11 @@ mark_nukaorange {
 
 .tooltitle {font-weight:bold;font-size: 0.9vw;}
 
+.leaflet-tile-container img {
+	width: 256.5px !important;
+	height: 256.5px !important;
+}
+
  /* ==========================================================================
    Helper classes
    ========================================================================== */
