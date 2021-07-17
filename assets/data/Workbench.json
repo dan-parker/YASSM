@@ -815,5 +815,9 @@
 {"id":"005C3DD2","name":"Tinker`s Workbench","type":"TinkerWorkbenchMarker","x":161859.187500,"y":45018.847656},
 {"id":"005C426C","name":"Cooking Station","type":"CookWorkbenchMarker","x":163506.125000,"y":42412.441406},
 {"id":"005EB214","name":"Cooking Station","type":"CookWorkbenchMarker","x":-86189.179687,"y":40978.097657},
-{"id":"005F0BF8","name":"Cooking Station","type":"CookWorkbenchMarker","x":80813.328125,"y":74149.054688}
+{"id":"005F0BF8","name":"Cooking Station","type":"CookWorkbenchMarker","x":80813.328125,"y":74149.054688},
+{"id":"005FBCDD","name":"Power Armor Station","type":"PAWorkbenchMarker","x":73984.210937,"y":100215.257813},
+{"id":"005FBCE2","name":"Armor Workbench","type":"ArmorWorkbenchMarker","x":74350.515625,"y":100998.390625},
+{"id":"005FBCE3","name":"Weapons Workbench","type":"WeaponWorkbenchMarker","x":74523.382813,"y":100646.187500},
+{"id":"005FBCF2","name":"Cooking Station","type":"CookWorkbenchMarker","x":73686.312500,"y":100058.218750}
 ]

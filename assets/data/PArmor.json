@@ -147,5 +147,6 @@
 {"id":"005910B5","name":"Power Armor","type":"PArmorMarker","x":-104994.843750,"y":-139968.625000},
 {"id":"00591318","name":"Power Armor","type":"PArmorMarker","x":-60106.152344,"y":-56969.398437},
 {"id":"0059B97B","name":"Fusion Core","type":"FCoreMarker","x":1449.935791,"y":-86506.171875},
-{"id":"005A0ACF","name":"Fusion Core","type":"FCoreMarker","x":204102.718750,"y":-60859.476562}
+{"id":"005A0ACF","name":"Fusion Core","type":"FCoreMarker","x":204102.718750,"y":-60859.476562},
+{"id":"005FC17C","name":"Power Armor","type":"PArmorMarker","x":73984.210937,"y":100215.257813}
 ]
